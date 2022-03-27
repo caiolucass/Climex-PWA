@@ -2,24 +2,24 @@
 
 Climex app e um aplicativo de climatizacao desenvolvido para auxiliar as pessoas a gerirem o clima de suas respectivas cidades de acordo com a sua preferencia. Com esse app e possivel cadastrar as informacoes climaticas das suas cidades, marcar e listar suas cidades favoritas e vizuliazar todas as informacoes sobre como esta o clima da sua cidade em uma respectiva data!
 
-## Descricao das Telas
+## :scroll: Descricao das Telas
 
  ### :sun_behind_small_cloud: Clima
 > Na tela de clima voce podera ver as informacoes completas sobre o clima da cidade selecionada, atraves de uma lista ordenada pelo dia.
 
- ### Favoritos
+ ### :hearts: Favoritos
 > Na tela de favoritos ficarao salvas as suas cidades favoritas.
 
-### Configuracoes
+### :gear: Configuracoes
 > Na tela de configuracoes e onde e cadastrado e selecionado a sua cidade e as informacoes sobre os clima da mesma de acordo com os dias da semana informado no formulario.
 
-## :warning: Observacoes :warning:
+## :warning: Observacoes
 > Nao e possivel cadastrar informacoes sobre o clima de uma mesma cidade no mesmo dia ou data atual.
 
-## :hammer: Ferramentas utilizadas :hammer:
+## :hammer: Ferramentas utilizadas
 > Java Script, HTML5, CSS
 
-## Duvidas? :question:
+## Duvidas :question:
 >A aplicação é original e não uma cópia da aplicação de um colega ou de uma aplicação já existente? R: Sim :heavy_check_mark:
 
 >A aplicação tem pelo menos duas interfaces (telas ou páginas) independentes? R: Sim :heavy_check_mark:
