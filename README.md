@@ -32,9 +32,9 @@ Climex app e um aplicativo de climatizacao desenvolvido para auxiliar as pessoas
 
 > O código da minha aplicação possui comentários explicando cada operação? R: em partes, sim :heavy_check_mark:
 
->A aplicação está funcionando corretamente? R: Nao, ainda nao esta completa.  :heavy_cross_mark:
+>A aplicação está funcionando corretamente? R: Nao, ainda nao esta completa.  :x:
 
->A aplicação está completa? R: Nao, nao esta completa. :heavy_cross_mark:
+>A aplicação está completa? R: Nao, nao esta completa. :x:
 
 ### Desenvolvedor
 > Caio Lucas
