@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Climex - Configuracoes</title>
+    <link href="style/global.css" rel="stylesheet"/>
+    <link href="style/config.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="">
+    <meta name="description" content="Aplicação para consultar o clima - Home"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+  </head>
+  <body class="container">
+    <img src="/assets/images/icons/ic_baseline-arrow-back-ios.svg"width="30px" height="30px"
+    alt="seta para voltar a apgina anterior" onclick="window.history.back()"/>
+
+    <h1 class="title">Configuracao</h1>
+      <form onsubmit="saveConfig(event)">
+          <label>Dia:
+          <select name="dia">
+            <option value="segunda">Segunda-Feira</option>
+            <option value="terca">Terca-Feira</option>
+            <option value="quarta">Quarta-Feira</option>
+            <option value="quinta">Quinta-Feira</option>
+            <option value="sexta">Sexta-Feira</option>
+            <option value="sabado">Sabado</option>
+            <option value="domingo">Domingo</option>
+          </select>
+          </label>
+
+          <label>Cidade:<input type="text"></label>
+
+          <label>Clima:
+              <select name="clima">
+               <option value="ensolarado">Ensolarado</option>
+               <option value="parcialmente-ensolarado">Parcialmente ensolarado</option>
+               <option value="nublado">Nublado</option>
+               <option value="parcialemte-nublado">Parcialmente nublado</option>
+               <option value="sol-e-chuva">Sol e chuva</option>
+               <option value="chuvoso">Chuvoso</option>
+               <option value="tempestade">Tempestade</option>
+              </select>
+        </label>
+          <label>Temperatura Minima:<input name="minimo" type="text"></label>
+          <label>Temperatura Maxima:<input name="maximo" type="text"></label>
+          <button type="submit">Salvar</button>
+      </form>
+
+      <label id="cidade-label" for="">Selecione a cidade desejada:</label>
+        <select id="cidade-selecionada" onchange="selectCity()">
+            <option value="select">Selecione uma cidade</option>
+         </select>
+
+      <span>Desenvolvido por Caio Lucas</span>
+      
+      <footer>
+        <a class="primary-btn" href="clima.html"><img src="/assets/images/icons/home.svg" width="30px" height="30px" alt="">Clima</a>
+        <a class="primary-btn" href="favoritos.html"><img src="/assets/images/icons/bookmark.svg" width="30px" height="30px" alt=""> Favoritos</a>
+        <a class="primary-btn" href="config.html"><img src="/assets/images/icons/config.svg" width="30px" height="30px" alt=""> Configuracoes</a>
+    </footer>
+    
+    <!--scripts-->
+    <script src="js/config.js"></script>
+<body>
+    
+</body>
+</html>

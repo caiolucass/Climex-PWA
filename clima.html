@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Climex - Home</title>
+    <link href="style/global.css" rel="stylesheet"/>
+    <link href="style/clima.css" rel="stylesheet"/>
+    <meta name="description" content="Aplicação para consultar o clima - Home"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+  </head>
+  <body class="container">
+
+    <header>
+      <img src="assets/images/icons/icomoon-free_menu.svg" alt="opcoes">
+      <img src="assets/images/icons/Weather forecast.png" alt="logo">
+      <a href="/index.html"><img src="assets/images/icons/ri_logout-box-line.svg" alt="sair"></a>
+    </header>
+
+    <main>
+        <section>
+          <span id="nome-cidade"></span>
+          <small id="clima">Tempo Ensolarado</small>
+          <strong>30 ºC</strong>
+          <img src="assets/images/icons/emojione_sun.svg" alt="ensolarado">
+          <small id="data">05 de fevereiro de 2022</small>
+          <small id="hora">11:00 AM</small>
+          <div>
+            <span class="minima">Min: 24 ºC</span>
+            <span class="maxima">Max: 30 ºC</span>
+          </div>
+        </section>
+        <ul>
+          <!-- <li>
+            <span class="dia">Segunda-Feira</span>
+            <img src="assets/images/icons/emojione_sun.svg" alt="ensolarado">
+            <span class="minima">24 ºC</span>
+            <span class="maxima">30 ºC</span>
+          </li>
+          <li>
+            <span class="dia">Terca-Feira</span>
+            <img src="assets/images/icons/emojione_sun-behind-large-cloud.svg" alt="ensolarado">
+            <span class="minima">28 ºC</span>
+            <span class="maxima">20 ºC</span>
+          </li>
+          <li>
+            <span class="dia">Quarta-Feira</span>
+            <img src="assets/images/icons/emojione_sun-behind-small-cloud.svg" alt="ensolarado">
+            <span class="minima">26 ºC</span>
+            <span class="maxima">17 ºC</span>
+          </li>
+          <li>
+            <span class="dia">Quinta-Feira</span>
+            <img src="assets/images/icons/emojione_sun-behind-rain-cloud.svg" alt="ensolarado">
+            <span class="minima">22 ºC</span>
+            <span class="maxima">15 ºC</span>
+          </li>
+          <li>
+            <span class="dia">Sexta-Feira</span>
+            <img src="assets/images/icons/emojione_cloud-with-lightning-and-rain.svg" alt="ensolarado">
+            <span class="minima">22 ºC</span>
+            <span class="maxima">15 ºC</span>
+          </li>
+          <li>
+            <span class="dia">Sabado</span>
+            <img src="assets/images/icons/emojione_sun-behind-rain-cloud.svg" alt="ensolarado">
+            <span class="minima">17 ºC</span>
+            <span class="maxima">13 ºC</span>
+          </li>
+          <li>
+            <span class="dia">Domingo</span>
+            <img src="assets/images/icons/emojione_cloud-with-rain.svg" alt="ensolarado">
+            <span class="minima">17 ºC</span>
+            <span class="maxima">13 ºC</span>
+          </li> -->
+        </ul>
+    </main>
+
+    <footer>
+      <a class="primary-btn" href="clima.html"><img src="/assets/images/icons/home.svg" width="30px" height="30px" alt="">Clima</a>
+      <a class="primary-btn" href="favoritos.html"><img src="/assets/images/icons/bookmark.svg" width="30px" height="30px" alt=""> Favoritos</a>
+      <a class="primary-btn" href="config.html"><img src="/assets/images/icons/config.svg" width="30px" height="30px" alt=""> Configuracoes</a>
+    </footer>
+    
+    <script type="text/javascript">
+      window.addEventListener('load', () => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker
+            .register('service-worker.js')
+            .then((res) =>
+              console.log('service worker registered on', res.scope),
+            )
+            .catch((err) => console.log('service worker not registered', err));
+        }
+      });
+    </script>
+    <script src="/js/clima.js"></script>
+  </body>
+</html>

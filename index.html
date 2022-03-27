@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!--Begin meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Climex App">
+    <meta name="description"content="Aplicação para verificar o clima - Página inicial"/>
+    <!--end meta-->
+
+    <!--Begin css-->
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/home.css"/>
+    <!--End css-->
+
+    <!--Begin icons-->
+    <link rel="icon" href="/assets/images/icons/Weather forecast.png">
+    <link rel="apple-touch-icon" href="/assets/images/icons/Weather forecast.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icons8-casa-24.png" sizes="24x24">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icons8-cloud-with-rain-48.png" sizes="48x48">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icons8-cloudy-64.png" sizes="64x64">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icons8-config-64.png" sizes="64x64">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icons8-dia-parcialmente-nublado-48.png" sizes="48x48">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icons8-favoritos-50.png" sizes="50x50">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icons8-parcialmente-nublado-com-chuva-48.png" sizes="48x48">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icons8-sun-48.png" sizes="48x48">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icons8-voltar-30.png" sizes="30x30">
+    <!--End icons-->
+
+    <!--Begin title-->
+    <title>Climex</title>
+    <!--End title-->
+</head>
+
+<body>
+    <header>
+        <img src="/assets/images/icons/Weather forecast.png"/>
+        <h1 class="title">Climex</h1>
+        <small>Bem vindo ao seu app climatico favorito</small>
+    </header>
+    <footer>
+        <a class="primary-btn" href="clima.html"><img src="/assets/images/icons/home.svg" width="30px" height="30px" alt="">Clima</a>
+        <a class="primary-btn" href="favoritos.html"><img src="/assets/images/icons/bookmark.svg" width="30px" height="30px" alt=""> Favoritos</a>
+        <a class="primary-btn" href="config.html"><img src="/assets/images/icons/config.svg" width="30px" height="30px" alt=""> Configuracoes</a>
+    </footer>
+
+    <!--Begin scripts-->
+<script>navigator.serviceWorker.register('/service-worker.js');</script>
+<script type="text/javascript">
+    window.addEventListener('load', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('service-worker.js')
+          .then((res) => {
+            console.log('service worker registered on', res.scope);
+          })
+          .catch((err) => console.log('service worker not registered', err));
+      }
+    });
+  </script>
+<!--Begin scripts-->
+</body>
+</html>

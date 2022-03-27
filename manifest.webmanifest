@@ -1,0 +1,71 @@
+{
+    "name": "Climex App",
+    "short_name": "Climex",
+    "author": "Caio Lucas",
+    "icon":"/assets/images/icons/Weather forecast.png",
+    "description": "Apliacacao PWA para poder conferir o clima",
+    "version": "1.0",
+    "lang": "pt-BR",
+    "start_url": "",
+    "scope": ".",
+    "display": "standalone",
+    "background-color": "#fff",
+    "theme_color": "#40ACE9",
+    "icons":[
+        {
+        "src" : "/assets/images/icons/Weather forecast.png",
+        "sizes":"36x36",
+        "type": "image/png"
+        },
+        {
+            "src" : "/assets/images/icons/icons8-casa-24.png",
+            "sizes":"24x24",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/images/icons/icons8-cloud-with-rain-48.png",
+            "sizes":"48x48",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/images/icons/icons8-cloudy-64.png",
+            "sizes":"64x64",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/images/icons/icons8-config-64.png",
+            "sizes":"64x64",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/images/icons/icons8-dia-parcialmente-nublado-48.png",
+            "sizes":"48x48",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/images/icons/icons8-favoritos-50.png",
+            "sizes":"50x50",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/images/icons/icons8-parcialmente-nublado-com-chuva-48.png",
+            "sizes":"48x48",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/images/icons/icons8-possibilidade-de-tempestade-48.png",
+            "sizes":"48x48",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/images/icons/icons8-sun-48.png",
+            "sizes":"48x48",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/images/icons/icons8-voltar-30.png",
+            "sizes":"30x30",
+            "type": "image/png"
+        }],
+        "dir": "ltr"
+}

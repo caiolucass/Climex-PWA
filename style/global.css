@@ -1,0 +1,66 @@
+@import 'colors.css';
+@import 'font.css';
+@import 'layout.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blue);
+  color: var(--white);
+  margin: 0px 1.2rem;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+  transition: 0.2s;
+}
+
+.title {
+  font-size: var(--font-size-01);
+  margin-bottom: 1.01rem;
+}
+
+input {
+  height: 3rem;
+  font-family: var(--title-font);
+  border-radius: var(--rounded-01);
+  padding: 0px 0.6rem;
+}
+
+input:focus {
+  border: 2px solid var(--blue);
+}
+
+body footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  background-color:var(--white);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+body footer a {
+  font-size: var(--font-size-08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}

@@ -1,0 +1,31 @@
+body form label{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+body form button{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;
+    background-color: black;
+    color: var(--white);
+}
+
+body span{
+    font-size: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 90px;
+    width: 100%;
+    left: 0;
+
+}
+
+body label#cidade-label{
+    font-size: 15px;
+    margin-top: 20px;
+}

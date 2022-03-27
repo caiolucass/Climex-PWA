@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Climex - Meus favoritos</title>
+    <meta name="description" content="Aplicação para consultar o clima - Meus favoritos"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Climex App">
+
+     <!--Begin icons-->
+     <link rel="icon" href="/assets/images/icons/Weather forecast.png">
+     <link href="style/global.css" rel="stylesheet"/>
+     <link rel="apple-touch-icon" href="/assets/images/icons/Weather forecast.png" sizes="32x32">
+     <link rel="apple-touch-icon" href="/assets/images/icons/icons8-casa-24.png" sizes="24x24">
+     <link rel="apple-touch-icon" href="/assets/images/icons/icons8-cloud-with-rain-48.png" sizes="48x48">
+     <link rel="apple-touch-icon" href="/assets/images/icons/icons8-cloudy-64.png" sizes="64x64">
+     <link rel="apple-touch-icon" href="/assets/images/icons/icons8-config-64.png" sizes="64x64">
+     <link rel="apple-touch-icon" href="/assets/images/icons/icons8-dia-parcialmente-nublado-48.png" sizes="48x48">
+     <link rel="apple-touch-icon" href="/assets/images/icons/icons8-favoritos-50.png" sizes="50x50">
+     <link rel="apple-touch-icon" href="/assets/images/icons/icons8-parcialmente-nublado-com-chuva-48.png" sizes="48x48">
+     <link rel="apple-touch-icon" href="/assets/images/icons/icons8-sun-48.png" sizes="48x48">
+     <link rel="apple-touch-icon" href="/assets/images/icons/icons8-voltar-30.png" sizes="30x30">
+     <!--End icons-->
+  </head>
+
+  <body style="visibility: hidden" class="container">
+    <img src="/assets/images/icons/icons8-voltar-30.png "width="30px" height="30px"
+    alt="seta para voltar a apgina anterior" onclick="window.history.back()"/>
+    <h1 class="title">Meus <br />Favoritos</h1>
+    <ul id="lists-container"></ul>
+  </body>
+
+  <script type="text/javascript">
+    window.addEventListener('load', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('service-worker.js')
+          .then((res) =>
+            console.log('service worker registered on', res.scope),
+          )
+          .catch((err) => console.log('service worker not registered', err));
+      }
+    });
+  </script>
+</html>
