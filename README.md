@@ -2,7 +2,7 @@
 
 Climex app e um aplicativo de climatizacao desenvolvido para auxiliar as pessoas a gerirem o clima de suas respectivas cidades de acordo com a sua preferencia.
 
-## Funcionalides
+## Telas
 
  ### Clima
 > Na tela de clima voce podera ver as informacoes completas sobre o clima da cidade selecionada, atraves de uma lista ordenada pelo dia.
